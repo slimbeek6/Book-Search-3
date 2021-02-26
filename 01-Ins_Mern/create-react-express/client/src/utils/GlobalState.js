@@ -34,6 +34,7 @@ const BookProvider = ({ value =[], ...props}) => {
             _id: 0,
             title: "",
             author: "",
+            img: "",
             synopsis: ""
         },
         saved: [],
