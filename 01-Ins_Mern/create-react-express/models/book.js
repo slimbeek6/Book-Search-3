@@ -20,6 +20,10 @@ const bookSchema = new mongoose.Schema({
          type: Text,
          required: true
      },
+     saved: {
+         type: Boolean,
+         default: false
+     }
 });
 
 const Book = mongoose.model("Book", bookSchema);
