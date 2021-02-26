@@ -8,16 +8,14 @@ const bookSchema = new mongoose.Schema({
      },
     img: {
         type: String,
-        validate: {
-            isUrl: true
-        }
+        required: true
      },
      author: {
         type: String,
         required: true
      },
      synopsis: {
-         type: Text,
+         type: String,
          required: true
      },
      saved: {
