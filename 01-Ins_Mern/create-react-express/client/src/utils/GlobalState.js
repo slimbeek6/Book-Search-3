@@ -18,9 +18,7 @@ const reducer = (state, action) => {
     switch (action.type) {
         case UPDATE_BOOKS:
             return {
-                ...state,
-                books: [...action.books],
-                loading: false
+                    
             };
         default:
             return state;

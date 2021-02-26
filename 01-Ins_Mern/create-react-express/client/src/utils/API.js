@@ -2,13 +2,13 @@ import axios from "axios";
 
 export default {
     // Searches for books and displays them
-    searchBooks: function() {
+    getBooks: function() {
         return axios.get("/google");
     },
     getSavedBooks: function() {
         return axios.get("/api/books/");
     },
-    saveBook: function() {
+    saveBook: function(id) {
         return axios.put("/api/books/save/" + id);
     }
 }
