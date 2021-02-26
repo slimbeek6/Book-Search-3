@@ -1,14 +1,14 @@
 import React from "react";
 import Form from "../components/Form";
-// import BookList from "../components/BookList";
+// import FoundBooksList from "../components/FoundBooksList";
 import "./main.css"
 
 const Main = () => {
     return (
         <div className="container">
-            {/* <Form /> */}
+            <Form />
             <hr/>
-            {/* <BookList /> */}
+            {/* <FoundBooksList /> */}
         </div>
     )
 };

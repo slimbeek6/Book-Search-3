@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
 import { ListItem, List } from '../List';
 import API from '../../utils/API';
-import { useStoreContext } from "../../utils/GlobalState";
+import { useBookContext } from "../../utils/GlobalState";
 
 const Book = (props) => {
-  const [state, dispatch] = useStoreContext();
+  const [state, dispatch] = useBookContext();
 
-  const getBooks = () => {
-    API.getBooks()
+  const saveBook = (id) => {
+    API.saveBooks()
       .then(results => {
         dispatch({
-          type: UPDATE_BOOKS,
+          type: ADD_SAVED,
           books: results.data
         });
       })
